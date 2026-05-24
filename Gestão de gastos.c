@@ -58,8 +58,7 @@ int main() {
                                  for (int i = 0; i < n; i++) {
                                  float novo_valor = valores[i] * fator;
                                  float reducao    = valores[i] - novo_valor;
-                                 printf("%-20s  R$ %8.2f  R$ %8.2f  -R$ %.2f\n",
-                                      nomes[i], valores[i], novo_valor, reducao);
+                                 printf("%-20s  R$ %8.2f  R$ %8.2f  -R$ %.2f\n", nomes[i], valores[i], novo_valor, reducao);
                                          novo_total += novo_valor;
                                     }
 
