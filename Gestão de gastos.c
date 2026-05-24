@@ -48,7 +48,7 @@ int main() {
 
                              if (resposta == 1) {
                                  float percentual_corte = (falta / total) * 100.0f;
-                                 float fator            = renda / total;
+                                 float fator = renda / total;
 
                                 printf("\nCorte necessario: %.1f%% em cada despesa\n", percentual_corte);
                                 printf("\n%-20s  %-12s  %-12s  %s\n", "Despesa", "Valor Atual", "Novo Valor", "Reducao");
@@ -57,7 +57,7 @@ int main() {
                                 float novo_total = 0;
                                  for (int i = 0; i < n; i++) {
                                  float novo_valor = valores[i] * fator;
-                                 float reducao    = valores[i] - novo_valor;
+                                 float reducao = valores[i] - novo_valor;
                                  printf("%-20s  R$ %8.2f  R$ %8.2f  -R$ %.2f\n", nomes[i], valores[i], novo_valor, reducao);
                                          novo_total += novo_valor;
                                     }
