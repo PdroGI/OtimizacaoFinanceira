@@ -19,7 +19,7 @@ int main() {
                             for (int i = 0; i < n; i++) {
                                  printf("\nDespesa %d\n", i + 1);
                                  printf("Nome:");
-                                 scanf("%s", nomes[i]);
+                                 scanf("%[^/n]s", nomes[i]);
                                  printf("Valor: R$ ");
                                  scanf("%f", &valores[i]);
                                  printf("Pode cortar? (1=Sim / 0=Nao): ");
