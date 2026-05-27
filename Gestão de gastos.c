@@ -12,7 +12,7 @@ int main() {
 
                 
         do{
-                system("cls || clear");
+                system("cls || clear");//limpa a tela antes do loop reiniciar
                 printf("=== Otimizador de Gastos Mensais ===\n\n");
 //adicionei o menu
                 printf("Escolha a alternativa desejada\n");
