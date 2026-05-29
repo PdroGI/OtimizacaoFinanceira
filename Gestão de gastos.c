@@ -34,7 +34,8 @@ int main() {
                           case 1:
                             printf("Digite o valor da Renda R$");
                             scanf("%f", &renda);
-                               if(renda > 0){
+                            limpar_buffer();
+                              if(renda > 0){
                                 printf("Adicionado com sucesso\n\n");
                                 saldo+=renda;
                                }else{
