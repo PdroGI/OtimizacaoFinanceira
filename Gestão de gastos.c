@@ -28,7 +28,7 @@ int main() {
                 printf("0.Sair\n");
                 
                         scanf("%d", &escolha);
-                        limpar_buffer()
+                        limpar_buffer();
                         switch(escolha){
 
                           case 1:
@@ -41,32 +41,32 @@ int main() {
                                 printf("Valor invalido\n");
                                 }
                                 printf("Pressione Enter para continuar");
-                                limpar_buffer()
+                                limpar_buffer();
                             break;
                           case 2:
                                 printf("Saldo: R$%.2f\n", saldo);
                                 printf("Pressione Enter para continuar");
-                                limpar_buffer()
+                                limpar_buffer();
                             break;
                           case 3:
                                 printf("Adicionar Despesa(max %d)\n", MAX);
                                     scanf("%d", &despesa);
-                                    limpar_buffer()
+                                    limpar_buffer();
                                         for (int i = 0; i < despesa; i++){
                                             printf("\nDespesa %d\n", i + 1);
                                             printf("Nome:");
                                             scanf(" %29[^\n]", nomes[i]);
-                                            limpar_buffer()
+                                            limpar_buffer();
                                             printf("Valor: R$ ");
                                             scanf("%f", &valores[i]);
-                                            limpar_buffer()
+                                            limpar_buffer();
                                             printf("Pode cortar? (1=Sim / 0=Nao): ");
                                             scanf("%d", &pode_cortar[i]);
-                                            limpar_buffer()
+                                            limpar_buffer();
                                             total += valores[i];
                                         }
                                          printf("Pressione Enter para continuar");
-                                    limpar_buffer()
+                                    limpar_buffer();
                             break;
                           case 4: 
                                 printf("\n=== Seus Gastos ===\n");
@@ -84,7 +84,7 @@ int main() {
                                             int resposta;
                                                     printf("Deseja reduzir cada gasto proporcionalmente para caber na renda? (1=Sim / 0=Nao): ");
                                                     scanf("%d", &resposta);
-                                                       limpar_buffer() 
+                                                       limpar_buffer();
                                                         if (resposta == 1) {
                                                          float percentual_corte = (falta / total) * 100.0f;
                                                          float fator = saldo / total;
@@ -106,9 +106,9 @@ int main() {
                                                          }
                                                        }
                                                     printf("Pressione Enter para continuar");
-                                                       limpar_buffer()
+                                                       limpar_buffer();
                                                        break;
-                case 0:       printf("Saindo do Sistema\n");
+                        case 0:       printf("Saindo do Sistema\n");
                             break;
                            default: printf("Valor invalido\n");
                          }
