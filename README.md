@@ -1,2 +1,2 @@
 # OtimizacaoFinanceira
-ProjetoFa1
+Projeto Faculdade 1 Semeste
